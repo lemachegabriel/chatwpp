@@ -3,5 +3,6 @@ const controller = require('../controllers/cont')
 const routes = express.Router()
 
 routes.post("/webhook", controller.getMessage)
+routes.get("/", controller.getTest)
 
 module.exports = routes
