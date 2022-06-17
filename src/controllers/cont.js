@@ -6,7 +6,7 @@ module.exports = {
     async getTest(req, res) {
         const data = req.body
         const challenge = data['hub.challenge']
-        console.log(JSON.stringify(challenge))
+        console.log(data)
         res.send(JSON.stringify(challenge))
     }
 }
