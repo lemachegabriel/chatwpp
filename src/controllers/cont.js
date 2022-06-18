@@ -4,9 +4,9 @@ module.exports = {
         res.sendStatus(200);
     }, 
     async getTest(req, res) {
-        const data = req.body
+        const data = req.query
         const challenge = data['hub.challenge']
         console.log(data)
-        res.send(JSON.stringify(challenge))
+        res.status(200).send(challenge);
     }
 }
